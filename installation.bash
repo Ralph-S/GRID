@@ -26,5 +26,3 @@ pip3 install flask-wtf
 # pip3 install flask-socketio==4.3.0
 # pip3 install python-engineio==3.13.0
 # pip3 install python-socketio==4.6.0
-
-#Deployment of pseudo language in flask babel requires some changes in the downloaded package
