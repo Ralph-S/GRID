@@ -1,0 +1,57 @@
+.live-feed { padding: 10px; grid-area: LF; }
+.map-display { padding: 10px; grid-area: MD; }
+.sensor-data { padding: 10px; grid-area: SD; }
+.odometry-data { padding: 10px; grid-area: OD; }
+.emergency-override { padding: 10px; grid-area: EO; }
+.terminal-logger { padding: 10px; grid-area: TL; }
+
+.app{
+  height: 100%;
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+  font-size: 5em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'LF LF name SD SD'
+    'LF LF EO OD OD'
+    'MD MD TL TL TL'
+    'MD MD TL TL TL';
+  gap: 10px;
+  background-color: #74aa72;
+  padding: 10px;
+}
+
+.grid-container > div:not(.emergency-override) {
+  background-color: rgba(255, 253, 253, 0.582);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+
+.emergency-override{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+}
+
+.round-button {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.2;
+}
