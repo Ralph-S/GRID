@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles/App.css';
 import LiveFeed from './components/LiveFeed';
 import MapDisplay from './components/MapDisplay';
 import SensorData from './components/SensorData';
