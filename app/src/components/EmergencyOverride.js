@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
 const EmergencyOverride = ({ isEmergency, setIsEmergency }) => {
-  const [buttonText, setButtonText] = useState('Emergency Override');
+  const [buttonText, setButtonText] = useState('Enter Emergency Mode');
 
   const handleEmergency = () => {
-    const newState = buttonText === 'Emergency Override' ? 'Automated Mode' : 'Emergency Override';
-
+    const newState = buttonText === 'Enter Emergency Mode' ? 'Exit Emergency Mode' : 'Enter Emergency Mode';
+  
     fetch('http://localhost:5000/emergency-override', { 
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ state: newState }), 
+      body: JSON.stringify({ state: newState === 'Enter Emergency Mode' ? 'Automated Mode' : 'Emergency Override' }), 
     })
     .then(response => response.json())
     .then(data => {
@@ -23,6 +23,7 @@ const EmergencyOverride = ({ isEmergency, setIsEmergency }) => {
       console.error('Error:', error);
     });
   };
+  
 
   return (
     <div className="component emergency-override">
