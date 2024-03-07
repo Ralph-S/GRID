@@ -11,4 +11,4 @@ nvm install node
 pip install Flask
 pip install Flask-Cors
 
-#DM installations
+#DM installations:
