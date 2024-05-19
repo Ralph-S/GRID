@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request, send_file
 from flask_cors import CORS
 import os
+from PIL import Image
+from io import BytesIO
 
 app = Flask(__name__)
 CORS(app)
@@ -29,7 +31,18 @@ def latest_image():
     
     if files:
         latest_image_path = os.path.join(IMAGE_FOLDER, files[0])
-        return send_file(latest_image_path, mimetype='image/jpeg')
+        image = Image.open(latest_image_path)
+        
+        # Resizing/rotation
+        new_size = (50, 50)
+        image = image.resize(new_size)
+        image = image.rotate(90, expand=True)
+        
+        img_io = BytesIO()
+        image.save(img_io, 'JPEG')
+        img_io.seek(0)
+        
+        return send_file(img_io, mimetype='image/jpeg')
     else:
         return jsonify({"error": "No images found"}), 404
 

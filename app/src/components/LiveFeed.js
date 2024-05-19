@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CamThermalToggle from './CamThermalToggle';
+// import CamThermalToggle from './CamThermalToggle';
 
 function LiveFeed() {
 
@@ -24,7 +24,7 @@ function LiveFeed() {
 
     return (
         <div className="live-feed">
-            <h2>Live feed from UGV</h2>
+            <h2>UGV</h2>
             {imageSrc ? <img src={imageSrc} alt="Live Feed" style={{ width: '100%' }} /> : 'Loading...'}
         </div>
     );
