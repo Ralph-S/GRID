@@ -41,8 +41,9 @@ Search and rescue operations often encounter challenges due to isolated function
    - **Path Following**: Receives GPS-based coordinates from the UAV and navigates using PID control.
    - **Obstacle Detection & Path Correction**: Replans route autonomously upon detecting obstacles, ensuring safe and continuous operation.
    - **Thermal Camera & Human Detection**: Equipped with a YOLOv7-trained thermal camera, detecting human heat signatures for prompt rescue action.
-
-   ![UGV Architecture](./Images/UGV.png)
+   <p align="center">
+     <img src="./Images/UGV.png" alt="UGV Architecture"/>
+   </p>
 
 ### 3. 🧠 **U-Net - Semantic Segmentation**
    - **Purpose**: Segments UAV-captured images, identifying accessible paths and regions for UGV navigation.
