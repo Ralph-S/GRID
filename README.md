@@ -2,7 +2,6 @@
 
 🌍 **Ground and Aerial Integrated Deployment (GRID)** is an innovative search and rescue solution designed to overcome the limitations of traditional rescue systems. By integrating an Unmanned Ground Vehicle (UGV) and an Unmanned Aerial Vehicle (UAV), GRID provides efficient, autonomous support during disaster relief operations. Leveraging advanced computer vision, machine learning, and real-time data transmission, GRID ensures precise navigation and human detection in disaster-stricken areas.
 
-![GRID Components](./Images/image1.png)
 
 ---
 
@@ -10,7 +9,7 @@
 
 We are proud to announce that **GRID Project** secured **2nd place** at the **D.A.R.E Robotics Competition**! 🚀 This prestigious event is one of the largest robotics competitions in Lebanon, bringing together innovative minds to showcase groundbreaking technology in robotics. This achievement highlights our dedication and ingenuity in pushing the boundaries of search and rescue solutions.
 
-![DARE Competition](./Images/DARE.jpeg)
+![DARE Competition](./Images/D.A.R.E.jpeg)
 
 ---
 
@@ -55,6 +54,7 @@ Search and rescue operations often encounter challenges due to isolated function
 
 ### 5. 🕹️ **Controller and Communication Pipeline**
    - **Controller**: Serves as the central command, allowing both manual and autonomous UGV operation.
+   ![PID Controller](./Images/PID.jpg)
    - **Communication**: Uses NRF24L01 modules, providing reliable data transmission over distances up to 10 km.
 
    ![Backend Communication Flow](./Images/Backend.png)
@@ -109,7 +109,7 @@ Search and rescue operations often encounter challenges due to isolated function
   - Strengthen radio communication and add advanced teleoperation for greater control.
   - Refine heat map and SOS methodologies to improve danger zone identification.
 
-![PID Controller](./Images/PID.jpg)
+
 
 ---
 
