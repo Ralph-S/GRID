@@ -58,7 +58,9 @@ Search and rescue operations often encounter challenges due to isolated function
    ![PID Controller](./Images/PID.jpg)
    - **Communication**: Uses NRF24L01 modules, providing reliable data transmission over distances up to 10 km.
 
-   ![Backend Communication Flow](./Images/Backend.png)
+   <p align="center">
+     <img src="./Images/Backend.png" alt="backend Communication Flow"/>
+   </p>
 
 ---
 
